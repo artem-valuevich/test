@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основные HTML-теги - Демонстрационная страница</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <!-- Шапка страницы -->
+    <header>
+        <h1>Демонстрация основных HTML-тегов</h1>
+        <p>Эта страница создана для демонстрации использования основных HTML-тегов в веб-разработке.</p>
+    </header>
+    
+    <!-- Навигация -->
+    <nav>
+        <ul>
+            <li><a href="#structure">Структурные теги</a></li>
+            <li><a href="#text">Текстовые теги</a></li>
+            <li><a href="#lists">Списки</a></li>
+            <li><a href="#tables">Таблицы</a></li>
+            <li><a href="#forms">Формы</a></li>
+            <li><a href="#media">Медиа</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Основное содержимое -->
+    <div class="container">
+        <main>
+            <!-- Раздел о структурных тегах -->
+            <section id="structure">
+                <h2>Структурные HTML-теги</h2>
+                <p>Структурные теги определяют основные части веб-страницы и помогают организовать содержимое.</p>
+                
+                <div class="tag-example">
+                    <h3>Пример использования тегов &lt;header&gt;, &lt;main&gt;, &lt;footer&gt;</h3>
+                    <p>Тег <code>&lt;header&gt;</code> используется для шапки сайта или раздела.</p>
+                    <p>Тег <code>&lt;main&gt;</code> содержит основное содержимое страницы.</p>
+                    <p>Тег <code>&lt;footer&gt;</code> используется для подвала сайта или раздела.</p>
+                </div>
+                
+                <div class="tag-list">
+                    <div class="tag-item">
+                        <strong>&lt;div&gt;</strong> - блочный контейнер
+                    </div>
+                    <div class="tag-item">
+                        <strong>&lt;section&gt;</strong> - тематическая секция
+                    </div>
+                    <div class="tag-item">
+                        <strong>&lt;article&gt;</strong> - независимый контент
+                    </div>
+                    <div class="tag-item">
+                        <strong>&lt;aside&gt;</strong> - боковая панель
+                    </div>
+                    <div class="tag-item">
+                        <strong>&lt;nav&gt;</strong> - навигационные ссылки
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Раздел о текстовых тегах -->
+            <section id="text">
+                <h2>Текстовые HTML-теги</h2>
+                <p>Текстовые теги используются для форматирования текстового содержимого на веб-странице.</p>
+                
+                <div class="tag-example">
+                    <h3>Примеры текстового форматирования</h3>
+                    <p>Это обычный абзац текста с использованием тега <code>&lt;p&gt;</code>.</p>
+                    <p><strong>Это жирный текст</strong> (тег <code>&lt;strong&gt;</code>).</p>
+                    <p><em>Это курсивный текст</em> (тег <code>&lt;em&gt;</code>).</p>
+                    <p><u>Это подчеркнутый текст</u> (тег <code>&lt;u&gt;</code>).</p>
+                    <p><mark>Это выделенный текст</mark> (тег <code>&lt;mark&gt;</code>).</p>
+                    <p><small>Это мелкий текст</small> (тег <code>&lt;small&gt;</code>).</p>
+                    <p>Верхний индекс: X<sup>2</sup> (тег <code>&lt;sup&gt;</code>).</p>
+                    <p>Нижний индекс: H<sub>2</sub>O (тег <code>&lt;sub&gt;</code>).</p>
+                </div>
+                
+                <h3>Заголовки разных уровней</h3>
+                <h1>Заголовок 1 уровня (h1)</h1>
+                <h2>Заголовок 2 уровня (h2)</h2>
+                <h3>Заголовок 3 уровня (h3)</h3>
+                <h4>Заголовок 4 уровня (h4)</h4>
+                <h5>Заголовок 5 уровня (h5)</h5>
+                <h6>Заголовок 6 уровня (h6)</h6>
+            </section>
+            
+            <!-- Раздел о списках -->
+            <section id="lists">
+                <h2>Списки в HTML</h2>
+                <p>HTML поддерживает несколько видов списков для организации информации.</p>
+                
+                <div class="container" style="display: flex; gap: 30px; margin: 20px 0;">
+                    <div style="flex: 1;">
+                        <h3>Нумерованный список (тег &lt;ol&gt;)</h3>
+                        <ol>
+                            <li>Первый пункт списка</li>
+                            <li>Второй пункт списка</li>
+                            <li>Третий пункт списка</li>
+                            <li>Четвертый пункт списка</li>
+                        </ol>
+                    </div>
+                    
+                    <div style="flex: 1;">
+                        <h3>Маркированный список (тег &lt;ul&gt;)</h3>
+                        <ul>
+                            <li>Элемент списка 1</li>
+                            <li>Элемент списка 2</li>
+                            <li>Элемент списка 3</li>
+                            <li>Элемент списка 4</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h3>Список определений (тег &lt;dl&gt;)</h3>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Язык разметки для создания веб-страниц</dd>
+                    
+                    <dt>CSS</dt>
+                    <dd>Язык стилей для оформления веб-страниц</dd>
+                    
+                    <dt>JavaScript</dt>
+                    <dd>Язык программирования для создания интерактивности на веб-страницах</dd>
+                </dl>
+            </section>
+            
+            <!-- Раздел о таблицах -->
+            <section id="tables">
+                <h2>Таблицы в HTML</h2>
+                <p>Таблицы создаются с помощью тега <code>&lt;table&gt;</code> и используются для отображения структурированных данных.</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Тег</th>
+                            <th>Описание</th>
+                            <th>Пример использования</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;table&gt;</td>
+                            <td>Определяет таблицу</td>
+                            <td>Внешний контейнер таблицы</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;tr&gt;</td>
+                            <td>Определяет строку таблицы</td>
+                            <td>Каждая строка в таблице</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;th&gt;</td>
+                            <td>Определяет заголовок таблицы</td>
+                            <td>Заголовки столбцов</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;td&gt;</td>
+                            <td>Определяет ячейку таблицы</td>
+                            <td>Данные в таблице</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;caption&gt;</td>
+                            <td>Определяет заголовок таблицы</td>
+                            <td>Название таблицы</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <!-- Раздел о формах -->
+            <section id="forms">
+                <h2>Формы в HTML</h2>
+                <p>Формы используются для сбора данных от пользователей. Ниже представлена демонстрационная форма.</p>
+                
+                <form action="#" method="post">
+                    <h3>Пример формы обратной связи</h3>
+                    
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+                    
+                    <label for="country">Страна:</label>
+                    <select id="country" name="country">
+                        <option value="">Выберите страну</option>
+                        <option value="ru">Россия</option>
+                        <option value="by">Беларусь</option>
+                        <option value="kz">Казахстан</option>
+                        <option value="ua">Украина</option>
+                    </select>
+                    
+                    <label>Пол:</label>
+                    <div style="margin-bottom: 15px;">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male" style="display: inline; margin-right: 15px;">Мужской</label>
+                        
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female" style="display: inline;">Женский</label>
+                    </div>
+                    
+                    <label>Интересы:</label>
+                    <div style="margin-bottom: 15px;">
+                        <input type="checkbox" id="web" name="interests" value="web">
+                        <label for="web" style="display: inline; margin-right: 15px;">Веб-разработка</label>
+                        
+                        <input type="checkbox" id="design" name="interests" value="design">
+                        <label for="design" style="display: inline; margin-right: 15px;">Дизайн</label>
+                        
+                        <input type="checkbox" id="programming" name="interests" value="programming">
+                        <label for="programming" style="display: inline;">Программирование</label>
+                    </div>
+                    
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Введите ваше сообщение"></textarea>
+                    
+                    <button type="submit">Отправить</button>
+                    <button type="reset">Сбросить</button>
+                </form>
+            </section>
+        </main>
+        
+        <!-- Боковая панель -->
+        <aside>
+            <section id="media">
+                <h2>Медиа-элементы</h2>
+                
+                <h3>Изображение (тег &lt;img&gt;)</h3>
+                <div style="text-align: center; margin: 15px 0;">
+                    <img src="https://via.placeholder.com/250x150/3498db/ffffff?text=Пример+изображения" alt="Пример изображения" style="max-width: 100%; border-radius: 8px;">
+                    <p style="font-size: 0.9rem; margin-top: 5px;">Пример изображения с использованием тега &lt;img&gt;</p>
+                </div>
+                
+                <h3>Аудио (тег &lt;audio&gt;)</h3>
+                <p>Пример встроенного аудиоплеера:</p>
+                <audio controls style="width: 100%; margin: 10px 0;">
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудио элемент.
+                </audio>
+                
+                <h3>Видео (тег &lt;video&gt;)</h3>
+                <p>Пример встроенного видеоплеера:</p>
+                <video controls style="width: 100%; border-radius: 5px; margin: 10px 0;">
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео элемент.
+                </video>
+                
+                <h3>Ссылки (тег &lt;a&gt;)</h3>
+                <p>Примеры ссылок:</p>
+                <ul>
+                    <li><a href="#structure">Внутренняя ссылка на раздел "Структурные теги"</a></li>
+                    <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank">Внешняя ссылка на документацию MDN</a></li>
+                    <li><a href="mailto:example@domain.com">Ссылка на email</a></li>
+                </ul>
+            </section>
+            
+            <section>
+                <h3>Дополнительная информация</h3>
+                <p>Эта демонстрационная страница использует семантические HTML-теги, которые улучшают доступность и SEO-оптимизацию.</p>
+                <p>Семантические теги помогают поисковым системам и скринридерам лучше понимать структуру и содержание веб-страницы.</p>
+                
+                <h3>Полезные теги</h3>
+                <ul>
+                    <li><code>&lt;blockquote&gt;</code> - для цитат</li>
+                    <li><code>&lt;code&gt;</code> - для фрагментов кода</li>
+                    <li><code>&lt;pre&gt;</code> - для предварительно форматированного текста</li>
+                    <li><code>&lt;time&gt;</code> - для указания даты и времени</li>
+                    <li><code>&lt;progress&gt;</code> - для отображения прогресса</li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+    
+    <!-- Подвал страницы -->
+    <footer>
+        <p>&copy; 2023 Демонстрационная страница HTML-тегов. Все права защищены.</p>
+        <p>Страница создана для образовательных целей.</p>
+        <p>Используемые технологии: HTML5, CSS3</p>
+        <p>Последнее обновление: <time datetime="2023-11-15">15 ноября 2023</time></p>
+    </footer>
+</body>
+</html>
